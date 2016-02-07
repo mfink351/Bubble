@@ -5,7 +5,7 @@
 //  Created by Mike Fink on 1/29/15.
 //  Copyright (c) 2016 Mike Fink. All rights reserved.
 //
-//  Based on Ken Toh's Geofencing App Cat
+//  Based on Ken Toh's Geofencing App 
 
 import UIKit
 import MapKit
@@ -92,8 +92,8 @@ class AddEventViewController: UITableViewController, CLLocationManagerDelegate, 
     
     func loadAllEvents() {
         events = []
-        let appDomain = NSBundle.mainBundle().bundleIdentifier!
-        NSUserDefaults.standardUserDefaults().removePersistentDomainForName(appDomain)
+        //let appDomain = NSBundle.mainBundle().bundleIdentifier!
+        //NSUserDefaults.standardUserDefaults().removePersistentDomainForName(appDomain)
         
         if let savedItems = NSUserDefaults.standardUserDefaults().arrayForKey(kSavedItemsKey) {
             for savedItem in savedItems {
