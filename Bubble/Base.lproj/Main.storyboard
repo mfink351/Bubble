@@ -938,7 +938,7 @@
         <!--Bubble-->
         <scene sceneID="QFE-bJ-1nY">
             <objects>
-                <tableViewController id="Syf-zd-HaM" customClass="AddEventViewController" customModule="Bubble" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Syf-zd-HaM" customClass="YourBubblesViewController" customModule="Bubble" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xYh-zS-hOz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -954,9 +954,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dL0-Ch-c9Z">
-                                                    <rect key="frame" x="35" y="45" width="345" height="537"/>
+                                                    <rect key="frame" x="35" y="85" width="345" height="339"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="537" id="zGr-1F-Vxj"/>
+                                                        <constraint firstAttribute="height" constant="339" id="pbA-os-2x0"/>
                                                     </constraints>
                                                     <connections>
                                                         <outlet property="delegate" destination="xYh-zS-hOz" id="qAi-2z-md7"/>
@@ -964,9 +964,9 @@
                                                 </mapView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="dL0-Ch-c9Z" firstAttribute="centerX" secondItem="Cav-QI-G7Y" secondAttribute="centerX" id="Gph-SN-UlJ"/>
-                                                <constraint firstItem="dL0-Ch-c9Z" firstAttribute="top" secondItem="Cav-QI-G7Y" secondAttribute="topMargin" constant="37" id="dqu-M7-nkp"/>
-                                                <constraint firstItem="dL0-Ch-c9Z" firstAttribute="leading" secondItem="Cav-QI-G7Y" secondAttribute="leadingMargin" constant="27" id="ghp-wr-B0a"/>
+                                                <constraint firstItem="dL0-Ch-c9Z" firstAttribute="centerX" secondItem="Cav-QI-G7Y" secondAttribute="centerX" id="5vX-8w-oMk"/>
+                                                <constraint firstItem="dL0-Ch-c9Z" firstAttribute="leading" secondItem="Cav-QI-G7Y" secondAttribute="leadingMargin" constant="27" id="ISf-ZG-M8e"/>
+                                                <constraint firstItem="dL0-Ch-c9Z" firstAttribute="top" secondItem="Cav-QI-G7Y" secondAttribute="topMargin" constant="77" id="T7s-pz-c5P"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -992,7 +992,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="extraButton" destination="cds-io-UQX" id="SDq-aK-f2o"/>
-                        <outlet property="mapView" destination="dL0-Ch-c9Z" id="7Lz-qh-979"/>
+                        <outlet property="mapView" destination="dL0-Ch-c9Z" id="1BH-0o-lJb"/>
                         <outlet property="menuButton" destination="OiY-xE-JNP" id="Iev-8t-1NM"/>
                         <outlet property="zoomButton" destination="lhW-hc-qpb" id="pER-S0-s7e"/>
                     </connections>
@@ -1042,11 +1042,11 @@
         <image name="tag" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="yv6-2P-DKE"/>
+        <segue reference="Sfj-eC-bdt"/>
         <segue reference="zPk-dT-SOG"/>
         <segue reference="b3O-Ud-HU9"/>
         <segue reference="zIY-9n-JsE"/>
-        <segue reference="QVy-yb-kYo"/>
-        <segue reference="7Mq-DB-e0d"/>
         <segue reference="hGd-jG-m1Z"/>
     </inferredMetricsTieBreakers>
 </document>

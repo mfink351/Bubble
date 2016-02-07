@@ -5,87 +5,66 @@
 //  Created by Mike Fink on 1/29/15.
 //  Copyright (c) 2016 Mike Fink. All rights reserved.
 //
-//  Based on Ken Toh's Geofencing App 
+//  Based on Ken Toh's Geofencing App
 
 import UIKit
 import MapKit
 import CoreLocation
 
-let kSavedItemsKey = "savedItemsd4"
-
-class AddEventViewController: UITableViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class YourBubblesViewController: UITableViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
-  //var delegate: AddEventViewControllerDelegate!
-  let locationManager = CLLocationManager()
-  var events = [Event]()
+    //var delegate: AddEventViewControllerDelegate!
+    let locationManager = CLLocationManager()
+    var events = [Event]()
     
-  @IBOutlet weak var mapView: MKMapView!
-
-  @IBOutlet var addButton: UIBarButtonItem!
-  @IBOutlet var zoomButton: UIBarButtonItem!
-
-  @IBOutlet weak var radiusTextField: UITextField!
-  @IBOutlet weak var noteTextField: UITextField!
-
-  @IBOutlet weak var menuButton: UIBarButtonItem!
-  @IBOutlet weak var extraButton: UIBarButtonItem!
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet var zoomButton: UIBarButtonItem!
     
-    self.mapView.delegate = self
-    self.locationManager.delegate = self
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var extraButton: UIBarButtonItem!
     
-    self.locationManager.requestAlwaysAuthorization()
-    loadAllEvents()
-    
-    if revealViewController() != nil {
-        //            revealViewController().rearViewRevealWidth = 62
-        menuButton.target = revealViewController()
-        menuButton.action = "revealToggle:"
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        revealViewController().rightViewRevealWidth = 150
-        extraButton.target = revealViewController()
-        extraButton.action = "rightRevealToggle:"
+        self.mapView.delegate = self
+        self.locationManager.delegate = self
         
-        view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        self.locationManager.requestAlwaysAuthorization()
+        loadAllEvents()
+        
+        if revealViewController() != nil {
+            //            revealViewController().rearViewRevealWidth = 62
+            menuButton.target = revealViewController()
+            menuButton.action = "revealToggle:"
+            
+            revealViewController().rightViewRevealWidth = 150
+            extraButton.target = revealViewController()
+            extraButton.action = "rightRevealToggle:"
+            
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
+        
+        navigationItem.rightBarButtonItems = [extraButton, zoomButton]
+        tableView.tableFooterView = UIView()
         
     }
-
-    zoomToUserLocationInMapView(mapView)
-    navigationItem.rightBarButtonItems = [extraButton, zoomButton]
-    tableView.tableFooterView = UIView()
-  }
-
-  @IBAction func textFieldEditingChanged(sender: UITextField) {
-    addButton.enabled = !radiusTextField.text!.isEmpty && !noteTextField.text!.isEmpty
-  }
-
-  @IBAction func onCancel(sender: AnyObject) {
-    dismissViewControllerAnimated(true, completion: nil)
-  }
-
-  @IBAction private func onAdd(sender: AnyObject) {
-    let coordinate = mapView.centerCoordinate
-    let radius = (radiusTextField.text! as NSString).doubleValue
-    let identifier = NSUUID().UUIDString
-    let note = noteTextField.text
-    let eventType = EventType.OnExit
-
-    // 1
-    let clampedRadius = (radius > locationManager.maximumRegionMonitoringDistance) ? locationManager.maximumRegionMonitoringDistance : radius
     
-    let event = Event(coordinate: coordinate, radius: clampedRadius, identifier: identifier, note: note!, eventType: eventType)
-    addEvent(event)
-    // 2
-    startMonitoringEvent(event)
+    override func viewDidAppear(animated: Bool) {
+        let mapCenter = mapView.userLocation.coordinate
+        print(mapCenter)
+        let region = MKCoordinateRegionMakeWithDistance(mapCenter, 1000, 1000)
+        print(region)
+        mapView.setRegion(region, animated: true)
+    }
     
-    saveAllEvents()
-  }
-
-  @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
-    zoomToUserLocationInMapView(mapView)
-  }
+    @IBAction func onCancel(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction private func onZoomToCurrentLocation(sender: AnyObject) {
+        zoomToUserLocationInMapView(mapView)
+    }
     
     
     // MARK: Loading and saving functions
@@ -144,6 +123,7 @@ class AddEventViewController: UITableViewController, CLLocationManagerDelegate, 
         userLocation: MKUserLocation!) {
             zoomToUserLocationInMapView(self.mapView)
     }
+    
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         let identifier = "myEvent"
@@ -249,6 +229,8 @@ class AddEventViewController: UITableViewController, CLLocationManagerDelegate, 
             }
         }
     }
+
+    
     
     func locationManager(manager: CLLocationManager!, monitoringDidFailForRegion region: CLRegion!, withError error: NSError!) {
         print("Monitoring failed for region with identifier: \(region.identifier) \(error)")
@@ -258,5 +240,5 @@ class AddEventViewController: UITableViewController, CLLocationManagerDelegate, 
         print("Location Manager failed with the following error: \(error)")
     }
     
-
+    
 }

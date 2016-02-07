@@ -14,6 +14,7 @@
 		74679F221C62AEA5001E41EA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74679F1E1C62AEA4001E41EA /* MapViewController.swift */; };
 		74679F231C62AEA5001E41EA /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74679F1F1C62AEA5001E41EA /* PhotoViewController.swift */; };
 		74679F251C62D9DF001E41EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74679F241C62D9DF001E41EA /* MapKit.framework */; };
+		7472FB591C67E3C9003ED4A0 /* YourBubblesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7472FB581C67E3C9003ED4A0 /* YourBubblesViewController.swift */; };
 		747E42E51C5F0B79002EDF23 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747E42E41C5F0B79002EDF23 /* HealthKit.framework */; };
 		747E42FD1C5FADF1002EDF23 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747E42F91C5FADF1002EDF23 /* AddEventViewController.swift */; };
 		747E42FE1C5FADF1002EDF23 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747E42FA1C5FADF1002EDF23 /* Event.swift */; };
@@ -56,6 +57,7 @@
 		74679F1E1C62AEA4001E41EA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		74679F1F1C62AEA5001E41EA /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		74679F241C62D9DF001E41EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7472FB581C67E3C9003ED4A0 /* YourBubblesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourBubblesViewController.swift; sourceTree = "<group>"; };
 		747E42E41C5F0B79002EDF23 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		747E42E61C5F0B79002EDF23 /* Bubble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Bubble.entitlements; sourceTree = "<group>"; };
 		747E42F91C5FADF1002EDF23 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				747E42FC1C5FADF1002EDF23 /* Utilities.swift */,
 				7480FF081C5E94C60085FAF3 /* Main.storyboard */,
 				74679F1C1C62AEA4001E41EA /* NewsTableViewController.swift */,
+				7472FB581C67E3C9003ED4A0 /* YourBubblesViewController.swift */,
 				74679F1D1C62AEA4001E41EA /* NewsTableViewCell.swift */,
 				74679F1E1C62AEA4001E41EA /* MapViewController.swift */,
 				74679F1F1C62AEA5001E41EA /* PhotoViewController.swift */,
@@ -335,6 +338,7 @@
 				747E43001C5FADF1002EDF23 /* Utilities.swift in Sources */,
 				74679F201C62AEA5001E41EA /* NewsTableViewController.swift in Sources */,
 				7480FF051C5E94C60085FAF3 /* AppDelegate.swift in Sources */,
+				7472FB591C67E3C9003ED4A0 /* YourBubblesViewController.swift in Sources */,
 				747E42FE1C5FADF1002EDF23 /* Event.swift in Sources */,
 				747E42FF1C5FADF1002EDF23 /* EventsViewController.swift in Sources */,
 				74679F211C62AEA5001E41EA /* NewsTableViewCell.swift in Sources */,
