@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741D0AF01C61CE8200BD2412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741D0AEE1C61CE8200BD2412 /* LaunchScreen.storyboard */; };
+		74679F1B1C62ABA1001E41EA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74679F1A1C62ABA1001E41EA /* SWRevealViewController.m */; };
+		74679F201C62AEA5001E41EA /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74679F1C1C62AEA4001E41EA /* NewsTableViewController.swift */; };
+		74679F211C62AEA5001E41EA /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74679F1D1C62AEA4001E41EA /* NewsTableViewCell.swift */; };
+		74679F221C62AEA5001E41EA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74679F1E1C62AEA4001E41EA /* MapViewController.swift */; };
+		74679F231C62AEA5001E41EA /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74679F1F1C62AEA5001E41EA /* PhotoViewController.swift */; };
+		74679F251C62D9DF001E41EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74679F241C62D9DF001E41EA /* MapKit.framework */; };
+		747E42E51C5F0B79002EDF23 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747E42E41C5F0B79002EDF23 /* HealthKit.framework */; };
+		747E42FD1C5FADF1002EDF23 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747E42F91C5FADF1002EDF23 /* AddEventViewController.swift */; };
+		747E42FE1C5FADF1002EDF23 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747E42FA1C5FADF1002EDF23 /* Event.swift */; };
+		747E42FF1C5FADF1002EDF23 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747E42FB1C5FADF1002EDF23 /* EventsViewController.swift */; };
+		747E43001C5FADF1002EDF23 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747E42FC1C5FADF1002EDF23 /* Utilities.swift */; };
 		7480FF051C5E94C60085FAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480FF041C5E94C60085FAF3 /* AppDelegate.swift */; };
-		7480FF071C5E94C60085FAF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480FF061C5E94C60085FAF3 /* ViewController.swift */; };
 		7480FF0A1C5E94C60085FAF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7480FF081C5E94C60085FAF3 /* Main.storyboard */; };
 		7480FF0D1C5E94C60085FAF3 /* Bubble.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7480FF0B1C5E94C60085FAF3 /* Bubble.xcdatamodeld */; };
 		7480FF0F1C5E94C60085FAF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7480FF0E1C5E94C60085FAF3 /* Assets.xcassets */; };
-		7480FF121C5E94C60085FAF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7480FF101C5E94C60085FAF3 /* LaunchScreen.storyboard */; };
 		7480FF1D1C5E94C60085FAF3 /* BubbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480FF1C1C5E94C60085FAF3 /* BubbleTests.swift */; };
 		7480FF281C5E94C60085FAF3 /* BubbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480FF271C5E94C60085FAF3 /* BubbleUITests.swift */; };
+		74A9A2181C616E71007612E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74A9A2171C616E71007612E0 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +46,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		741D0AEF1C61CE8200BD2412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74679F171C62ABA0001E41EA /* Bubble-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bubble-Bridging-Header.h"; sourceTree = "<group>"; };
+		74679F181C62ABA1001E41EA /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
+		74679F191C62ABA1001E41EA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		74679F1A1C62ABA1001E41EA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		74679F1C1C62AEA4001E41EA /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		74679F1D1C62AEA4001E41EA /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		74679F1E1C62AEA4001E41EA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		74679F1F1C62AEA5001E41EA /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		74679F241C62D9DF001E41EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		747E42E41C5F0B79002EDF23 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		747E42E61C5F0B79002EDF23 /* Bubble.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Bubble.entitlements; sourceTree = "<group>"; };
+		747E42F91C5FADF1002EDF23 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		747E42FA1C5FADF1002EDF23 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		747E42FB1C5FADF1002EDF23 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		747E42FC1C5FADF1002EDF23 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7480FF011C5E94C60085FAF3 /* Bubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7480FF041C5E94C60085FAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7480FF061C5E94C60085FAF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7480FF091C5E94C60085FAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7480FF0C1C5E94C60085FAF3 /* Bubble.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bubble.xcdatamodel; sourceTree = "<group>"; };
 		7480FF0E1C5E94C60085FAF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7480FF111C5E94C60085FAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7480FF131C5E94C60085FAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7480FF181C5E94C60085FAF3 /* BubbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7480FF1C1C5E94C60085FAF3 /* BubbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTests.swift; sourceTree = "<group>"; };
 		7480FF1E1C5E94C60085FAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7480FF231C5E94C60085FAF3 /* BubbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubbleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7480FF271C5E94C60085FAF3 /* BubbleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleUITests.swift; sourceTree = "<group>"; };
 		7480FF291C5E94C60085FAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74A9A2171C616E71007612E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74679F251C62D9DF001E41EA /* MapKit.framework in Frameworks */,
+				747E42E51C5F0B79002EDF23 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +103,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74679F161C62AB35001E41EA /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				74679F181C62ABA1001E41EA /* SidebarMenu-Bridging-Header.h */,
+				74679F191C62ABA1001E41EA /* SWRevealViewController.h */,
+				74679F1A1C62ABA1001E41EA /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		747E42D61C5EAA86002EDF23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74A9A2171C616E71007612E0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7480FEF81C5E94C60085FAF3 = {
 			isa = PBXGroup;
 			children = (
+				74679F241C62D9DF001E41EA /* MapKit.framework */,
+				747E42E41C5F0B79002EDF23 /* HealthKit.framework */,
 				7480FF031C5E94C60085FAF3 /* Bubble */,
 				7480FF1B1C5E94C60085FAF3 /* BubbleTests */,
 				7480FF261C5E94C60085FAF3 /* BubbleUITests */,
@@ -99,13 +146,23 @@
 		7480FF031C5E94C60085FAF3 /* Bubble */ = {
 			isa = PBXGroup;
 			children = (
+				74679F161C62AB35001E41EA /* SWRevealViewController */,
+				747E42E61C5F0B79002EDF23 /* Bubble.entitlements */,
 				7480FF041C5E94C60085FAF3 /* AppDelegate.swift */,
-				7480FF061C5E94C60085FAF3 /* ViewController.swift */,
-				7480FF081C5E94C60085FAF3 /* Main.storyboard */,
+				741D0AEE1C61CE8200BD2412 /* LaunchScreen.storyboard */,
 				7480FF0E1C5E94C60085FAF3 /* Assets.xcassets */,
-				7480FF101C5E94C60085FAF3 /* LaunchScreen.storyboard */,
-				7480FF131C5E94C60085FAF3 /* Info.plist */,
+				747E42F91C5FADF1002EDF23 /* AddEventViewController.swift */,
+				747E42FA1C5FADF1002EDF23 /* Event.swift */,
+				747E42FB1C5FADF1002EDF23 /* EventsViewController.swift */,
+				747E42FC1C5FADF1002EDF23 /* Utilities.swift */,
+				7480FF081C5E94C60085FAF3 /* Main.storyboard */,
+				74679F1C1C62AEA4001E41EA /* NewsTableViewController.swift */,
+				74679F1D1C62AEA4001E41EA /* NewsTableViewCell.swift */,
+				74679F1E1C62AEA4001E41EA /* MapViewController.swift */,
+				74679F1F1C62AEA5001E41EA /* PhotoViewController.swift */,
+				747E42D61C5EAA86002EDF23 /* Supporting Files */,
 				7480FF0B1C5E94C60085FAF3 /* Bubble.xcdatamodeld */,
+				74679F171C62ABA0001E41EA /* Bubble-Bridging-Header.h */,
 			);
 			path = Bubble;
 			sourceTree = "<group>";
@@ -197,6 +254,14 @@
 					7480FF001C5E94C60085FAF3 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 52YP3DDHC9;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					7480FF171C5E94C60085FAF3 = {
 						CreatedOnToolsVersion = 7.2;
@@ -235,8 +300,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7480FF121C5E94C60085FAF3 /* LaunchScreen.storyboard in Resources */,
 				7480FF0F1C5E94C60085FAF3 /* Assets.xcassets in Resources */,
+				741D0AF01C61CE8200BD2412 /* LaunchScreen.storyboard in Resources */,
+				74A9A2181C616E71007612E0 /* Info.plist in Resources */,
 				7480FF0A1C5E94C60085FAF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +328,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74679F1B1C62ABA1001E41EA /* SWRevealViewController.m in Sources */,
 				7480FF0D1C5E94C60085FAF3 /* Bubble.xcdatamodeld in Sources */,
-				7480FF071C5E94C60085FAF3 /* ViewController.swift in Sources */,
+				747E42FD1C5FADF1002EDF23 /* AddEventViewController.swift in Sources */,
+				74679F221C62AEA5001E41EA /* MapViewController.swift in Sources */,
+				747E43001C5FADF1002EDF23 /* Utilities.swift in Sources */,
+				74679F201C62AEA5001E41EA /* NewsTableViewController.swift in Sources */,
 				7480FF051C5E94C60085FAF3 /* AppDelegate.swift in Sources */,
+				747E42FE1C5FADF1002EDF23 /* Event.swift in Sources */,
+				747E42FF1C5FADF1002EDF23 /* EventsViewController.swift in Sources */,
+				74679F211C62AEA5001E41EA /* NewsTableViewCell.swift in Sources */,
+				74679F231C62AEA5001E41EA /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,20 +374,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		741D0AEE1C61CE8200BD2412 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				741D0AEF1C61CE8200BD2412 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		7480FF081C5E94C60085FAF3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7480FF091C5E94C60085FAF3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7480FF101C5E94C60085FAF3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7480FF111C5E94C60085FAF3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -383,7 +457,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -406,10 +480,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bubble/Bubble.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bubble/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SwagApps.Bubble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bubble/Bubble-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -417,10 +498,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bubble/Bubble.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bubble/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SwagApps.Bubble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bubble/Bubble-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -491,6 +578,7 @@
 				7480FF2E1C5E94C60085FAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7480FF2F1C5E94C60085FAF3 /* Build configuration list for PBXNativeTarget "BubbleTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +587,7 @@
 				7480FF311C5E94C60085FAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7480FF321C5E94C60085FAF3 /* Build configuration list for PBXNativeTarget "BubbleUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +596,7 @@
 				7480FF341C5E94C60085FAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
