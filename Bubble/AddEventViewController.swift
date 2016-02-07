@@ -5,7 +5,7 @@
 //  Created by Mike Fink on 1/29/15.
 //  Copyright (c) 2016 Mike Fink. All rights reserved.
 //
-//  Based on Ken Toh's Geofencing App
+//  Based on Ken Toh's Geofencing App Cat
 
 import UIKit
 import MapKit
